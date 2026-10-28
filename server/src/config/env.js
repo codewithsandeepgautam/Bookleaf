@@ -7,7 +7,7 @@ const schema = z.object({
   MONGODB_URI: z.string().min(1, 'MONGODB_URI is required'),
   JWT_SECRET: z.string().min(16, 'JWT_SECRET must be at least 16 chars'),
   JWT_EXPIRES_IN: z.string().default('7d'),
-  CLIENT_ORIGIN: z.string().default('http://localhost:3000'),
+  CLIENT_ORIGIN: z.string().default('https://bookleaf-1-k87q.onrender.com'),
   OPENAI_API_KEY: z.string().optional().default(''),
   OPENAI_BASE_URL: z.string().optional().default(''),
   AI_MODEL: z.string().default('gpt-4o-mini'),
